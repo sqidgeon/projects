@@ -3,77 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | Sqidgeon.Dev</title>
+  <title>Projects | Sqidgeon.Dev</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- 
+
   <nav class="navbar">
     <div class="logo">
       <h1><a href="https://sqidgeon.github.io/home/"><span>Sqidgeon</span><span class="dotdev">.Dev</span></a></h1>
     </div>
   </nav>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" id="Homelink">Home</a></li>
-      <li><a href="#about" id="bioLink">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="https://sqidgeon.github.io/Bio">Bio</a></li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
-
-    <div class="burger" id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-
-  <br /><br /><br /><br />
-
-  <h1 style="font-size: 100px; text-align: center;">
-    <span style="color: #ffffff;">Hii, I'm </span>
-    <span style="color: #B49FDD;">Sqidgeon</span>
-  </h1>
-
-  <br />
-
-  <p style="color: lightgray; font-size: 24px; text-align: center; margin-top: -10px;">
-    "The science of today is the technology of tomorrow."
-  </p>
-
-  <!-- Skills section placeholder -->
-  <section id="skills" style="height: 600px;"></section>
-
-  <script>
-    const burger = document.getElementById('burger');
-const navLinks = document.getElementById('navLinks');
-
-burger.addEventListener('click', () => {
-  navLinks.classList.toggle('nav-active');
-  burger.classList.toggle('active');
-});
-
-const aboutLink = document.querySelector('a[href="#about"]');
-aboutLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-  navLinks.classList.remove('nav-active');
-  burger.classList.remove('active');
-});
-
-const homeLink = document.querySelector('a[href="#home"]');
-homeLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  navLinks.classList.remove('nav-active');
-  burger.classList.remove('active');
-});
-
-  </script>
+</section>
 </body>
 </html>
-
-
-
