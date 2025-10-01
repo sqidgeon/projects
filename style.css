@@ -70,64 +70,61 @@ h1 {
   padding: 40px 20px;
 }
 
-.content-card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.08); /* semi-transparent white */
+.info-box {
+  display: flex;
+  align-items: center;
+  background: rgba(180, 159, 221, 0.15); /* light purple transparent */
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  box-shadow: 0 8px 30px white(0, 0, 0, 0.4);
-  padding: 50px 40px;
-  max-width: 700px;
-  width: 100%;
+  padding: 20px 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 8px 30px rgba(180, 159, 221, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #e0e0e0;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
 }
 
-.content-card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: inherit;
-  z-index: -1;
-  filter: blur(25px);
-}
-
-.content-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(180, 159, 221, 0.2);
-}
-
-.content-card h2 {
-  margin-bottom: 15px;
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.content-card p {
-  font-size: 1.9rem;
-  color: #ccc;
-  line-height: 0.5;
-}
-
-.profile-img {
+.info-image {
   width: 160px;
   height: 160px;
+  border-radius: 20px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid#ffffff;
-  box-shadow: 0 0 25px rgba(180, 159, 221, 0.4);
-  margin-bottom: 25px;
-  transition: transform 0.3s ease;
+  margin-right: 30px;
+  box-shadow: 0 0 25px rgba(180, 159, 221, 0.6);
+  flex-shrink: 0;
 }
 
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+.info-text {
+  flex: 1;
+  text-align: left;
 }
 
+.info-text h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info-text p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.info-button {
+  display: inline-block;
+  background-color: #b49fdd;
+  color: #161716;
+  font-weight: 700;
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.info-button:hover {
+  background-color: #9078c7;
+}
