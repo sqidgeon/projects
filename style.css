@@ -1,4 +1,6 @@
 body {
+  background-color: #161716;
+  text-align: center;
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: lightgray;
@@ -128,3 +130,4 @@ h1 {
   gap: 20px;
   margin-top: 20px;
 }
+
